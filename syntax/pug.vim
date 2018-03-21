@@ -43,6 +43,7 @@ syn region  pugJavascriptString start=+'+  skip=+\\\('\|$\)+  end=+'\|$+ contain
 " mhf
 syn match  pugAttrKey /\f*\ze=/ contained
 hi pugAttrKey ctermfg=121
+hi pugClass ctermfg=167
 
 syn region  pugAttributes matchgroup=pugAttributesDelimiter start="(" end=")" contained contains=pugJavascriptString,pugHtmlArg,pugAngular2,htmlArg,htmlEvent,htmlCssDefinition,pugAttrKey nextgroup=@pugComponent
 syn match   pugClassChar "\." containedin=htmlTagName nextgroup=pugClass
